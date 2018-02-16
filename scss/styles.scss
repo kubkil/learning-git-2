@@ -1,0 +1,28 @@
+// Variables
+$body-font: 'Kavivanar', cursive;
+$header-bcolor: #C0C0C0;
+$header-font: 'Montserrat', sans-serif;
+$header-font-size: 2em;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+}
+
+header {
+  background-color: $header-bcolor;
+  h1 {
+    text-align: center;
+    font-family: $header-font;
+    text-transform: uppercase;
+    font-size: $header-font-size;
+    font-weight: 700;
+    padding: 2%;
+  }
+}
