@@ -1,0 +1,2 @@
+autoprefixer-cli -o css/style.prefixed.css css/style.css
+java -jar ~/vnu.jar --skip-non-html learning-git-2/
