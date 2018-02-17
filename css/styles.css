@@ -18,32 +18,39 @@ header {
     font-weight: 700;
     padding: 1em; }
 
-section {
+.section, footer p {
   max-width: 43.750em;
   width: 100%;
   margin: 0 auto; }
-  section .lyrics {
+  .section .lyrics, footer p .lyrics {
     position: relative;
     margin: 1em; }
-  section .video {
+  .section .video, footer p .video {
     position: absolute;
     right: 0;
     height: 100%;
     width: auto;
     margin-bottom: 1em; }
 
+footer {
+  font-family: "Montserrat", sans-serif;
+  background: #C0C0C0;
+  text-align: center; }
+  footer p {
+    padding: 0.5em 0; }
+
 @media (max-width: 43.75em) {
-  section .lyrics {
+  .section .lyrics, footer p .lyrics {
     max-width: 24.563em;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 1em; }
-  section .video {
+  .section .video, footer p .video {
     position: static;
     display: block; } }
 @media (max-width: 20em) {
-  section .video {
+  .section .video, footer p .video {
     width: 100%;
     height: auto; } }
 

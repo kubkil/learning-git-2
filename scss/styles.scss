@@ -1,7 +1,7 @@
 // Variables
 $body-font: 'Kavivanar', cursive;
-$header-bcolor: #C0C0C0;
-$header-font: 'Montserrat', sans-serif;
+$head-foot-bgcolor: #C0C0C0;
+$head-foot-font: 'Montserrat', sans-serif;
 $header-font-size: 2em;
 
 
@@ -17,11 +17,11 @@ body {
 }
 
 header {
-  background-color: $header-bcolor;
+  background-color: $head-foot-bgcolor;
   margin-bottom: 2em;
   h1 {
     text-align: center;
-    font-family: $header-font;
+    font-family: $head-foot-font;
     text-transform: uppercase;
     font-size: $header-font-size;
     font-weight: 700;
@@ -29,7 +29,7 @@ header {
   }
 }
 
-section {
+.section {
   max-width: 43.750em;
   width: 100%;
   margin: 0 auto;
@@ -46,8 +46,18 @@ section {
   }
 }
 
+footer {
+  font-family: $head-foot-font;
+  background: $head-foot-bgcolor;
+  text-align: center;
+  p {
+    @extend .section;
+    padding: 0.5em 0;
+  }
+}
+
 @media (max-width: 43.750em) {
-  section {
+  .section {
     .lyrics {
       max-width: 24.563em;
       width: 100%;
@@ -63,7 +73,7 @@ section {
 }
 
 @media (max-width: 20em) {
-  section {
+  .section {
     .video {
       width: 100%;
       height: auto;
