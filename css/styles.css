@@ -6,6 +6,14 @@
 body {
   font-size: 100%; }
 
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
 header {
   background-color: #C0C0C0; }
   header h1 {
@@ -14,6 +22,12 @@ header {
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 700;
-    padding: 2%; }
+    padding: 1em; }
+
+section {
+  position: relative; }
+  section .video {
+    position: absolute;
+    margin-left: 50px; }
 
 /*# sourceMappingURL=styles.css.map */

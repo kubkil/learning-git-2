@@ -15,6 +15,15 @@ body {
   font-size: 100%;
 }
 
+.cf:before,
+.cf:after {
+  content: ' ';
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
 header {
   background-color: $header-bcolor;
   h1 {
@@ -23,6 +32,14 @@ header {
     text-transform: uppercase;
     font-size: $header-font-size;
     font-weight: 700;
-    padding: 2%;
+    padding: 1em;
+  }
+}
+
+section {
+  position: relative;
+  .video {
+    position: absolute;
+    margin-left: 50px;
   }
 }
