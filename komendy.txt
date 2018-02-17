@@ -1,2 +1,2 @@
 node_modules/.bin/autoprefixer-cli -o css/styles.prefixed.css css/styles.css
-java -jar ~/vnu.jar --skip-non-html learning-git-2/
+node_modules/.bin/nu-html-checker *.html
