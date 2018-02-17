@@ -16,17 +16,9 @@ body {
   font-family: $body-font;
 }
 
-.cf:before,
-.cf:after {
-  content: ' ';
-  display: table;
-}
-.cf:after {
-  clear: both;
-}
-
 header {
   background-color: $header-bcolor;
+  margin-bottom: 2em;
   h1 {
     text-align: center;
     font-family: $header-font;
@@ -38,16 +30,18 @@ header {
 }
 
 section {
-  max-width: 960px;
+  max-width: 700px;
   width: 100%;
   margin: 0 auto;
   .lyrics {
     position: relative;
     text-align: left;
-    padding: 1em 0;
+    margin: 1em;
     .video {
       position: absolute;
-      margin-left: 50%;
+      right: 0;
+      height: 100%;
+      width: auto;
     }
   }
 }
