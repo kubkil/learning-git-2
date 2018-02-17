@@ -30,7 +30,7 @@ header {
 }
 
 section {
-  max-width: 700px;
+  max-width: 43.750em;
   width: 100%;
   margin: 0 auto;
   .lyrics {
@@ -46,12 +46,15 @@ section {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.750em) {
   section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
+    .lyrics {
+      max-width: 24.563em;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1em;
+    }
     .video {
       position: static;
       display: block;
@@ -59,7 +62,7 @@ section {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 20em) {
   section {
     .video {
       width: 100%;
