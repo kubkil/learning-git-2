@@ -1,1 +1,1 @@
-# learning-git-2
+https://kubkil.github.io/learning-git-2/
