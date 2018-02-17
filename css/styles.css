@@ -26,10 +26,15 @@ section {
     position: relative;
     text-align: left;
     margin: 1em; }
-    section .lyrics .video {
-      position: absolute;
-      right: 0;
-      height: 100%;
-      width: auto; }
+  section .video {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: auto; }
+
+@media (max-width: 700px) {
+  section .lyrics,
+  section .video {
+    position: static; } }
 
 /*# sourceMappingURL=styles.css.map */

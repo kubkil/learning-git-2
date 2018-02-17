@@ -37,11 +37,21 @@ section {
     position: relative;
     text-align: left;
     margin: 1em;
+  }
+  .video {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  
+  section {
+    .lyrics,
     .video {
-      position: absolute;
-      right: 0;
-      height: 100%;
-      width: auto;
+      position: static;
     }
   }
 }
