@@ -4,7 +4,8 @@
   box-sizing: border-box; }
 
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  font-family: "Kavivanar", cursive; }
 
 .cf:before,
 .cf:after {
@@ -25,9 +26,15 @@ header {
     padding: 1em; }
 
 section {
-  position: relative; }
-  section .video {
-    position: absolute;
-    margin-left: 50px; }
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto; }
+  section .lyrics {
+    position: relative;
+    text-align: left;
+    padding: 1em 0; }
+    section .lyrics .video {
+      position: absolute;
+      margin-left: 50%; }
 
 /*# sourceMappingURL=styles.css.map */
